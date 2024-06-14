@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Tenure Selection</title>
+  <link rel="stylesheet" href="enjs.css">
+
+</head>
+<body style=background-color:skyblue>
+  <header>
+    <h1><font style=color:red;>Loan Tenure Selection</font></h1>
+    <div>
+<label id="name3"></label>
+       <button onclick="logout()">Logout</button>
+    </div>
+  </header>
+  <div class="container">
+    <label for="tenure">Select Loan Tenure:</label>
+    <select id="tenure" onchange="calculateEMI()">
+      <option value="12">1 Year</option>
+      <option value="24">2 Years</option>
+      <option value="36">3 Years</option>
+      <option value="48">4 Years</option>
+      <option value="60">5 Years</option>
+    </select>
+    <p id="interestRate"></p>
+    <div id="emiCalculator">
+      <h2>EMI Calculator</h2>
+      <label for="loanAmount">Loan Amount:</label>
+      <input type="number" id="loanAmount" placeholder="Enter loan amount">
+      <button onclick="calculateEMI()">Calculate EMI</button>
+      <p id="emiResult"></p>
+    </div>
+  </div>
+
+  <script src ="enjs.js">
+    </script>
+</body>
+</html>

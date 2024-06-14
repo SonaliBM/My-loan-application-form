@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Index</title>
+<link rel="stylesheet" href="indexjs.css">
+</head>
+<body style="background-color:skyblue"> 
+<!-- Form Start -->
+<header>
+    <h1><font style=color:red;>Loan Application Form</font></h1>
+    
+  </header>
+
+ 
+
+<form id="form" name="RegForm" onsubmit="return validation()" action="confirmjs.html" method="post">
+
+<div>
+<!-- Paramenter -->
+<p> Full Name: <input type="text" size="30" id="name" onfocusout="myname()"></input></p>
+ <span id="username"></span>
+            <br />
+             
+<p>E-mail: <input type="text" size="30" id="email" onfocusout="myemail()"/></p>
+<span id="email2"></span> 
+            <br />
+            
+ <p>Pan: <input type="text" size="30" id="pan" maxlength="10" onfocusout="mypan()"/>
+ <span id="pan2"></span>
+        </p>
+ 
+            <br />
+             
+<p>Loan Amount: <input type="text" size="30" id="amt" onfocusout="myint()" /></p>
+<span id="amt2"></span>
+            <br />
+     
+   </div>
+   <p>
+<input name="submit" type="submit" value="Submit" style="background-color: green;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px">
+   </p>
+ </form>
+ <!-- Form END -->
+<script src="indexjs.js"></script>
+ </body>
+</html>

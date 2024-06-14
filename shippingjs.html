@@ -1,0 +1,70 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Index</title>
+<link rel="stylesheet" href="shippingjs.css">
+</head>
+<body style="background-color:skyblue"> 
+<!-- Form Start -->
+<header>
+    <h1><font style=color:red;>Shipping Details</font></h1>
+    
+  </header>
+
+<form id="form" name="RegForm" onsubmit="return validation()" action="enjs.html" method="post">
+
+<div>
+<!-- Paramenter -->
+<p> Full Name: <input type="text" size="30" id="name" onfocusout="myname()"></input></p>
+ <span id="username"></span>
+            </p>
+            <br/>             
+<p>Address Line 1: <input type="text" size="30" id="Address Line 1" onfocusout="myaddress()"/></p>
+<span id="address"></span> 
+            <br/>
+            
+ <p>Address Line 2: <input type="text" size="30" id="Address Line 2" onfocusout="myaddress()"/>
+ <span id="address"></span>
+            </p>
+ 
+            <br/>
+             
+<p>City: <input type="text" size="30" id="city" onfocusout="mycity()" /></p>
+<span id="city"></span>
+            </p>
+            <br/>
+
+<p>State/Province: <input type="text" size="30" id="State/Province" onfocusout="mystate()" /></p>
+<span id="State/Province"></span>
+            </p>
+            <br/>
+
+<p>Zip/Postal Code: <input type="text" size="30" id="Zip/Postal Code" onfocusout="myzip()" /></p>
+<span id="Zip/Postal Code"></span>
+            </p>
+            <br/>
+
+<p>Country: <input type="text" size="30" id="Country" onfocusout="myCountry()" /></p>
+<span id="Country"></span>
+            </p>
+            <br/>
+
+
+
+     
+   </div>
+   <p>
+<input name="submit" type="submit" value="Submit" style="background-color: green;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px">
+   </p>
+ </form>
+ <!-- Form END -->
+<script src="shippingjs.js"></script>
+ </body>
+</html>
